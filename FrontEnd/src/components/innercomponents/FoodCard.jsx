@@ -5,7 +5,7 @@ const FoodCard = ({food}) => {
     <div className='p-12 w-80 h-96 rounded-xl overflow-hidden bg-[#4A5A48] '>
       <div className='flex flex-col justify-center items-center'>
         <div className='w-42 overflow-hidden rounded-xl'>
-            <img src={food.image} alt={food.name} className='w-44 h-40 rounded-xl' />
+            <img src={food.image} alt={food.name} className='w-44 h-40 rounded-xl object-cover' />
         </div>
         <div className='flex flex-col mb-3 pt-3 text-[#E3DAC9]'>
             <div>

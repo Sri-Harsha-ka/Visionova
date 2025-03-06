@@ -30,7 +30,7 @@ function IntroPhase() {
                 >
 
                     <Navbar />
-                    <span className="relative bottom-[45%] opacity-100 text-[#E3DAC9]">Open Your <span className="text-red-800 text-4xl font-serif">Hearts</span> With Feast</span>
+                    <span className="relative top-[45%] opacity-100 text-[#E3DAC9]">Open Your <span className="text-red-800 text-4xl font-serif">Hearts</span> With Feast</span>
                 </main>
     
                 {/* <div className=''>
