@@ -16,6 +16,9 @@ function App() {
   const sectionRef3 = useRef(null)
   const sectionRef4 = useRef(null)
 
+  // const [activeTab, setActiveTab] = useState("tab1");
+
+
   const scrollToSection = (ref) => {
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -28,7 +31,7 @@ function App() {
   return (
     <>
       <div className="w-full">
-        <IntroPhase />
+        <IntroPhase  />
         <div className='main-page bg-[#2E3B32] h-full rounded-t-[5rem] flex justify-evenly  pt-32 px-24 mt-[-10rem] '>
           <NavItem onClick={() => scrollToSection(sectionRef1)} val={{ image: images.biriyani, title: "HotStuff" }} />
           <NavItem onClick={()=> scrollToSection(sectionRef2)} val={{ image: images.vegBiriyani, title: "Offers" }} />

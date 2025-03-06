@@ -17,6 +17,11 @@ import milkshake from "./images/milkshake1.jpg"
 import OfferCard1 from "./images/OfferCard1.jpg"
 import OfferCard2 from "./images/OfferCard2.jpg"
 import OfferCard3 from "./images/OfferCard3.jpg"
+import milkshake2 from "./images/milkshake2.jpg"
+import vegLogo2 from "./images/veg-logo-3.png"
+import nonVeg2 from "./images/non-veg-logo.png"
+import egg from "./images/egg.png"
+import OfferCard4 from "./images/OfferCard4.png";
 
 const images = {
     biriyani,
@@ -37,9 +42,12 @@ const images = {
     milkshake,
     OfferCard1,
     OfferCard2,
-    OfferCard3
-
-
+    OfferCard3,
+    milkshake2,
+    vegLogo2,
+    nonVeg2,
+    egg,
+    OfferCard4
 
 };
 export default images;

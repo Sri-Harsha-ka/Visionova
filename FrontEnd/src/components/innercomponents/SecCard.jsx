@@ -5,11 +5,13 @@ import Selector from './selector'
 
 const SecCard = ({ref}) => {
   return (
-    <div className='bg-[#2E3B32] pt-24 px-24 pb-24 flex flex-col gap-10'>
-      <div className="flex justify-between pb-20 px-10 ">
-        <div ref={ref} className="flex justify-evenly gap-10">
-          <Selector values={{type:"Veg",image:images.vegLogo  }}/>
-          <Selector values={{type:"Non-Veg",image:images.nonVeg}}/> 
+    <div className='bg-[#2E3B32] px-24 pb-24 flex flex-col gap-10'>
+      <div className="flex justify-between px-10 ">
+        <div ref={ref} className="flex justify-evenly " >
+          <img src={images.vegLogo2}  className='w-96 cursor-pointer' alt="" /> 
+          <img src={images.nonVeg2}  className='w-96 cursor-pointer' alt="" /> 
+          <img src={images.egg}  className='w-96 cursor-pointer' alt="" /> 
+          
         </div>
         <div>
           {/* <span >Filter</span> */}
