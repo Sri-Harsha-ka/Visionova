@@ -10,11 +10,11 @@ const OfferPhase = ({ref}) => {
       </div>
       <hr className='h-2 mb-14' />
       <div ref={ref} className='bg-[#2E3B32]  pb-14 px-44 flex justify-evenly gap-20'>
-        <OfferCard val={{ image: images.piza, off1: "Get Upto 200$", off2: "of Cashback", text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, mollitia expedita distinctio magnam veritatis corporis libero atque asperiores sunt ad", width: 43 }} />
-        <OfferCard val={{ image: images.shavarma, off1: "Get Upto 50$", off2: "of Cashback", text: "Lorem ipsum,dipisicing elit. Repellat, mollitia expedita distinctio magnam veritatis corporis libero atque asperiores sunt ad", width: 35 }} />
+        <OfferCard val={{ image: images.piza, off1: "Get Upto 200₹", off2: "of Cashback", text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, mollitia expedita distinctio magnam veritatis corporis libero atque asperiores sunt ad", width: 43 }} />
+        <OfferCard val={{ image: images.shavarma, off1: "Get Upto 50₹", off2: "of Cashback", text: "Lorem ipsum,dipisicing elit. Repellat, mollitia expedita distinctio magnam veritatis corporis libero atque asperiores sunt ad", width: 35 }} />
       </div>
       <div className='px-44  flex justify-evenly gap-5 pb-24 pl-10 '>
-        <OfferCard val={{ image: images.vegCombo, width: 40, off1: "Veg Biriyani", off2: "Premium at 79$", text: "Lorem ipsum,dipisicing elit. Repellat, mollitia expedita distinctio magnam veritatis corporis libero atque asperiores sunt ad" }} />
+        <OfferCard val={{ image: images.vegCombo, width: 40, off1: "Veg Biriyani", off2: "Premium at 79₹", text: "Lorem ipsum,dipisicing elit. Repellat, mollitia expedita distinctio magnam veritatis corporis libero atque asperiores sunt ad" }} />
         <div className='pr-36'>
           <div className={`h-96 rounded-xl pr-6`} style={{
             background: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(${images.milkshake2})`,
@@ -25,7 +25,7 @@ const OfferPhase = ({ref}) => {
           }}>
             <div className='text-[#E3DAC9] font-bold text-4xl flex flex-col relative top-1/2 px-3'>
               <span>MilkShake</span>
-              <span className='pb-3'>At 29$</span>
+              <span className='pb-3'>At 29₹</span>
               <hr className='h-1 mx-3 bg-white ' />
             </div>
             <div className='tracking-tighter font-mono text-[#E3DAC9] relative top-52 px-5'>
