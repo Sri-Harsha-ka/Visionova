@@ -24,6 +24,7 @@ import nonVeg2 from "./images/non-veg-logo.png"
 import egg from "./images/egg.png"
 import OfferCard4 from "./images/OfferCard4.png";
 import vegCurry from "./images/veg-rice.jpg"
+import loginCover  from "./images/loginCover.jpg"
 
 const images = {
     biriyani,
@@ -51,7 +52,8 @@ const images = {
     nonVeg2,
     egg,
     OfferCard4,
-    vegCurry
+    vegCurry,
+    loginCover
 
 };
 export default images;

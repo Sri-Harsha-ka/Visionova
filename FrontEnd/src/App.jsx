@@ -8,6 +8,7 @@ import Footer from "./components/Footer"
 import Login from "./components/Login"
 import NavItem from "./components/innercomponents/NavItem"
 import images from "./components/innercomponents/asserts"
+import { useState } from "react"
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
   const sectionRef3 = useRef(null)
   const sectionRef4 = useRef(null)
 
-  // const [activeTab, setActiveTab] = useState("tab1");
+  const [activeTab, setActiveTab] = useState("tab1");
 
 
   const scrollToSection = (ref) => {
@@ -26,24 +27,27 @@ function App() {
       console.error("Reference is undefined:", ref);
     }
   };
-  
+
 
   return (
-    <>
-      <div className="w-full">
-        <IntroPhase  />
-        <div className='main-page bg-[#2E3B32] h-full rounded-t-[5rem] flex justify-evenly  pt-32 px-24 mt-[-10rem] '>
-          <NavItem onClick={() => scrollToSection(sectionRef1)} val={{ image: images.biriyani, title: "HotStuff" }} />
-          <NavItem onClick={()=> scrollToSection(sectionRef2)} val={{ image: images.vegBiriyani, title: "Offers" }} />
-          <NavItem onClick={()=> scrollToSection(sectionRef3)} val={{ image: images.biriyani, title: "Filters" }} />
-          <NavItem onClick={()=>scrollToSection(sectionRef4)} val={{ image: images.biriyani, title: "About Us" }} />
-        </div>
-        <OfferPhase ref={sectionRef2} />
-        <HotPhase ref={sectionRef1} />
-        <SecCard ref={sectionRef3} />
-        <Footer ref={sectionRef4} />
-      </div>
-    </>
+
+    <div className="w-full">
+      {activeTab == "login" ? (<Login activeTab={activeTab} setActiveTab={setActiveTab} />) : (
+        <>
+          <IntroPhase activeTab={activeTab} setActiveTab={setActiveTab} />
+          <div className='main-page bg-[#2E3B32] h-full rounded-t-[5rem] flex justify-evenly  pt-32 px-24 mt-[-10rem] '>
+            <NavItem onClick={() => scrollToSection(sectionRef1)} val={{ image: images.biriyani, title: "HotStuff" }} />
+            <NavItem onClick={() => scrollToSection(sectionRef2)} val={{ image: images.vegBiriyani, title: "Offers" }} />
+            <NavItem onClick={() => scrollToSection(sectionRef3)} val={{ image: images.biriyani, title: "Filters" }} />
+            <NavItem onClick={() => scrollToSection(sectionRef4)} val={{ image: images.biriyani, title: "About Us" }} />
+          </div>
+          <OfferPhase ref={sectionRef2} />
+          <HotPhase ref={sectionRef1} />
+          <SecCard ref={sectionRef3} />
+          <Footer ref={sectionRef4} />
+
+        </>)}
+    </div>
   )
 }
 

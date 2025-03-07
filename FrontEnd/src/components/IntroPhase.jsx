@@ -12,7 +12,7 @@ import SecCard from "./innercomponents/SecCard";
 // import "aos/dist/aos.css";
 
 
-function IntroPhase() {
+function IntroPhase({ activeTab,setActiveTab}) {
 
     // useEffect(()=>{
     //     AOS.init({duration:800})
@@ -29,7 +29,7 @@ function IntroPhase() {
                     }}
                 >
 
-                    <Navbar />
+                    <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
                     <span className="relative top-[45%] opacity-100 text-[#E3DAC9]">Open Your <span className="text-red-800 text-4xl font-serif">Hearts</span> With Feast</span>
                 </main>
     
